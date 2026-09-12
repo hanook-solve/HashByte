@@ -1,0 +1,186 @@
+/* HashByte site — Win98 desktop chrome, matches the app's own UI */
+
+@font-face {
+  font-family: 'Tahoma';
+  src: local('Tahoma'), local('Segoe UI');
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #008080; /* classic teal desktop */
+  font-family: Tahoma, "MS Sans Serif", "Segoe UI", sans-serif;
+  color: #000;
+  font-size: 14px;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 32px 16px 0;
+}
+
+.desktop {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.window {
+  width: 100%;
+  max-width: 720px;
+  background: #C0C0C0;
+  border: 2px solid #fff;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  box-shadow: 1px 1px 0 #000;
+  margin-bottom: 32px;
+}
+
+.titlebar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.2px;
+}
+
+.titlebar .dots {
+  display: flex;
+  gap: 3px;
+}
+
+.titlebar .dots span {
+  width: 16px;
+  height: 14px;
+  background: #C0C0C0;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.content {
+  padding: 18px 22px 22px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 4px 0 6px;
+}
+
+h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #808080;
+  padding-bottom: 4px;
+  margin-top: 22px;
+}
+
+p, li { line-height: 1.5; }
+
+.tagline {
+  color: #000080;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.panel-sunken {
+  background: #fff;
+  border: 2px solid #808080;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  padding: 12px 14px;
+  margin: 14px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #C0C0C0;
+  border: 2px solid #fff;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  padding: 8px 18px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:active {
+  border-color: #000 #fff #fff #000;
+}
+
+.btn-row {
+  margin: 18px 0 6px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0;
+}
+
+.feature-list li {
+  padding: 6px 0 6px 26px;
+  position: relative;
+  border-bottom: 1px dotted #999;
+}
+
+.feature-list li:before {
+  content: "\2713";
+  position: absolute;
+  left: 4px;
+  color: #000080;
+  font-weight: bold;
+}
+
+.nav-links {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  margin: 0 8px;
+}
+
+footer.taskbar {
+  background: #C0C0C0;
+  border-top: 2px solid #fff;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  position: sticky;
+  bottom: 0;
+}
+
+.start {
+  background: #C0C0C0;
+  border: 2px solid #fff;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  padding: 3px 10px;
+  font-weight: bold;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  background: #fff;
+  border: 1px solid #808080;
+  padding: 1px 4px;
+}
